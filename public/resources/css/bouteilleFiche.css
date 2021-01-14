@@ -391,7 +391,7 @@
 @media screen and (max-width: 640px) {
 
     .card-fiche {
-        width: 240px;
+
         height: 470px;
         margin-bottom: 1em;
         -webkit-perspective: 1500px;
