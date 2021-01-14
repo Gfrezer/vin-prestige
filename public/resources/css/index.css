@@ -1,0 +1,431 @@
+/*========================= Page Accueil ============================*/
+
+
+.video-js {
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+
+}
+
+
+
+
+.titre span {
+    position: absolute !important;
+    margin-top: 9vw;
+    margin-left: 4.7vw;
+    font-family: "Noto Sans";
+    font-size: 10vw;
+    -webkit-animation: fadein 15s;
+    animation: fadein 15s;
+    color: rgb(179, 66, 66);
+
+}
+
+.titre h2 {
+    position: absolute !important;
+    margin-top: 300px;
+    font-family: "Noto Sans";
+    font-size: 5vw;
+    -webkit-animation: fadein 15s;
+    animation: fadein 15s;
+    color: rgb(179, 66, 66);
+    margin-top: 8.1vw;
+    margin-left: 10vw;
+}
+
+.titre p {
+    position: absolute !important;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    font-size: 3vw;
+    color: rgb(206, 200, 200);
+    font-family: "Amatic SC";
+    -webkit-animation: fadein 10s;
+    animation: fadein 10s;
+
+}
+
+.titre h4 {
+    position: absolute !important;
+    margin-top: 20vw;
+    margin-left: 16vw;
+    font-size: 3vw;
+    color: rgb(206, 200, 200);
+    font-family: "Amatic SC";
+    -webkit-animation: fadein 20s;
+    animation: fadein 20s;
+
+}
+
+
+
+.btnAccueil1 {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    font-family: serif;
+    padding: 0.4vw;
+    color: rgb(206, 200, 200);
+    border-radius: 15px;
+    border: solid 2px rgb(179, 66, 66);
+    -webkit-animation: fadein 10s;
+    animation: fadein 10s;
+
+}
+
+.btnAccueil1:hover {
+    color: rgb(179, 66, 66);
+    border: solid 2px rgb(114, 16, 16);
+
+}
+
+.btnAccueil2 {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    font-family: serif;
+    padding: 0.4vw;
+    color: rgb(206, 200, 200);
+    border-radius: 15px;
+    border: solid 2px rgb(179, 66, 66);
+    -webkit-animation: fadein 15s;
+    animation: fadein 10s;
+
+}
+
+.btnAccueil2:hover {
+    color: rgb(179, 66, 66);
+    border: solid 2px rgb(114, 16, 16);
+
+}
+
+.buttEttext {
+    position: absolute !important;
+    margin-left: 15vw;
+    text-align: center;
+    margin-top: 40vw;
+
+}
+
+.buttEttext h5 {
+    color: rgb(206, 200, 200);
+    margin-bottom: 15px;
+}
+
+
+.buttEttext h6 {
+    color: rgb(206, 200, 200);
+    margin-bottom: 15px;
+}
+
+.buttEttext a {
+    margin: 40px;
+}
+
+
+
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*media queries 1040px*/
+@media screen and (max-width: 1040px) {
+
+    .video-js {
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+
+
+
+    .titre span {
+        position: absolute !important;
+        margin-top: 9vw;
+        margin-left: 4.7vw;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 10vw;
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+        color: rgb(179, 66, 66);
+
+    }
+
+    .titre h2 {
+        position: absolute !important;
+        margin-top: 8.1vw;
+        font-family: Noto Sans;
+        font-size: 5vw;
+        -webkit-animation: fadein 6s;
+        animation: fadein 6s;
+        color: rgb(179, 66, 66);
+        margin-left: 10vw;
+    }
+
+    .titre p {
+        position: absolute !important;
+        margin-top: 4vw;
+        margin-left: 5vw;
+        font-size: 3vw;
+        color: rgb(206, 200, 200);
+        font-family: "Amatic SC";
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+
+    }
+
+    .titre h4 {
+        position: absolute !important;
+        margin-top: 20vw;
+        margin-left: 16vw;
+        font-size: 3vw;
+        color: rgb(206, 200, 200);
+        font-family: "Amatic SC";
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+
+    }
+
+    h5 {
+        color: #999;
+    }
+
+    .btnAccueil {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        font-family: monospace;
+        padding: 0.4vw;
+        color: rgb(179, 66, 66);
+        border-radius: 15px;
+        border: solid 2px rgb(179, 66, 66);
+        -webkit-animation: fadein 25s;
+        animation: fadein 25s;
+
+    }
+
+
+
+    .buttEttext {
+        position: absolute !important;
+        text-align: center;
+        margin-top: 40vw;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .buttEttext h5 {
+        color: rgb(206, 200, 200);
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+
+    .buttEttext h6 {
+        color: rgb(206, 200, 200);
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .buttEttext a {
+        margin: 40px;
+    }
+
+
+
+
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+/*media queries Iphone5/SE*/
+@media screen and (max-width: 320px) {
+
+    .video-js {
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+
+
+
+    .titre span {
+        position: absolute !important;
+        margin-top: 28vw;
+        margin-left: 9vw;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 18vw;
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+        color: rgb(179, 66, 66);
+
+    }
+
+    .titre h2 {
+        position: absolute !important;
+        margin-top: 25vw;
+        font-family: Noto Sans;
+        font-size: 7vw;
+        -webkit-animation: fadein 6s;
+        animation: fadein 6s;
+        color: rgb(179, 66, 66);
+        margin-left: 10vw;
+    }
+
+    .titre p {
+        position: absolute !important;
+        margin-top: 5vw;
+        margin-left: 10px;
+        font-size: 7vw;
+        color: rgb(206, 200, 200);
+        font-family: "Amatic SC";
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+
+    }
+
+    .titre h4 {
+        position: absolute !important;
+        margin-top: 50vw;
+        margin-left: 16vw;
+        font-size: 6vw;
+        color: rgb(206, 200, 200);
+        font-family: "Amatic SC";
+        -webkit-animation: fadein 10s;
+        animation: fadein 10s;
+
+    }
+
+    h5 {
+        color: #999;
+    }
+
+    .btnAccueil {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        font-family: monospace;
+        padding: 0.4vw;
+        color: rgb(179, 66, 66);
+        border-radius: 15px;
+        border: solid 2px rgb(179, 66, 66);
+        -webkit-animation: fadein 25s;
+        animation: fadein 25s;
+
+    }
+
+
+
+    .buttEttext {
+        position: absolute !important;
+        text-align: center;
+        margin-top: 70vw;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .buttEttext h5 {
+        color: rgb(206, 200, 200);
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+
+    .buttEttext h6 {
+        color: rgb(206, 200, 200);
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .buttEttext a {
+        margin: 40px;
+    }
+
+
+
+
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+/*=========================FIN media queries INTRO ============================*/

@@ -1,0 +1,233 @@
+/*===================navbar de base =========================*/
+.container-fluid-navbar {
+    width: 100%;
+}
+
+.row {
+    margin: 0px;
+}
+
+.navbar_css {
+    margin-top: 6vw;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 50px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #72142e;
+}
+
+.navbar-nav a {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.5vw;
+
+}
+
+.navbar-nav p {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 0.8vw;
+    text-align: center;
+    margin-top: auto;
+    margin-left: 16vw;
+
+}
+
+a.dropdown-item1 {
+    position: relative;
+    text-decoration: none;
+    color: #72142e;
+}
+
+
+
+a.dropdown-item1 span {
+    display: none;
+}
+
+a:hover.dropdown-item1 span {
+    display: inline;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    z-index: 100;
+    padding: 2px 4px;
+}
+
+/*=======================  ancre page principale ====================*/
+.ancrePagePrincipale p a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+    font-size: 1vw;
+
+}
+
+.ancrePagePrincipale {
+    text-align: center;
+    background-color: #72142e;
+    width: auto;
+
+}
+
+
+
+
+
+
+
+
+
+/*media queries 1200px*/
+@media screen and (max-width: 1200px) {
+
+
+
+    .container-fluid-navbar {
+        width: 100%;
+    }
+
+    .row {
+        margin: 0px;
+    }
+
+    .navbar_css {
+        margin-top: 5vw;
+        width: fit-content;
+        margin-left: 18vw;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 50px;
+    }
+
+
+    .navbar-expand-md .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+
+
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #72142e;
+    }
+
+    .navbar-nav a {
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 1.5vw;
+
+    }
+
+    .navbar-nav p {
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 0.8vw;
+        text-align: center;
+        margin-top: auto;
+
+    }
+
+    a.dropdown-item1 {
+        position: relative;
+        text-decoration: none;
+        color: #72142e;
+    }
+
+
+
+    a.dropdown-item1 span {
+        display: none;
+    }
+
+    a:hover.dropdown-item1 span {
+        display: inline;
+        position: absolute;
+        top: 50px;
+        left: 160px;
+        z-index: 100;
+        padding: 2px 4px;
+    }
+
+    /*=======================  ancre page principale ====================*/
+    .ancrePagePrincipale p a {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2vw;
+
+    }
+
+    .ancrePagePrincipale {
+        text-align: center;
+        background-color: #72142e;
+        width: fit-content;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+
+    .navbar_css {
+        margin-top: 5vw;
+        width: 290px;
+        margin-left: 0px;
+
+    }
+
+
+    .navbar-nav a {
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 20px;
+        padding-right: 50px;
+    }
+
+
+
+    .navbar-nav p {
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 20px;
+    }
+
+    /*=======================  ancre page principale ====================*/
+    .ancrePagePrincipale p a {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        text-align: center;
+        font-size: 3vw;
+
+    }
+
+
+
+    .ancrePagePrincipale p {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ancrePagePrincipale {
+        text-align: center;
+        background-color: #72142e;
+        width: 257px;
+
+    }
+
+}
+
+
+
+/*===================fin navbar de base =========================*/

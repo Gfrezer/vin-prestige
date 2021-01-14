@@ -1,0 +1,72 @@
+/*========================= Géneral =====================*/
+
+html {
+    width: 100%;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* 
+@media screen and (max-width: 640px) {
+    html {
+        width: 138%;
+
+    }
+} */
+
+/*========================= photo de fond navbar et logo =====================*/
+
+.fondHautDePage {
+    background-image: url("../images/fondLogin.jpeg");
+    background-size: cover;
+    height: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 640px) {
+    .fondHautDePage {
+        background-image: url("../images/fondLogin.jpeg");
+        background-size: cover;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/*========================= photo de fond vigne =====================*/
+
+.photo_vigne {
+    background-image: url(/resources/images/fond_de_base.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+/*========================= cycle de la vigne =====================*/
+.cycleVigne {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*========================= titre des sections =====================*/
+.col-md-12 .titreSection {
+    font-family: serif;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-top: 4vw;
+    color: white;
+    background: linear-gradient(40deg, rgba(29, 27, 27, 0.7), rgba(156, 96, 96, 0.7));
+}
+
+
+.col-md-12 .titreSection h2 {
+    margin-top: 2.8vw;
+    color: white;
+    text-align: center;
+
+}

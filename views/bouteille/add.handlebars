@@ -1,0 +1,258 @@
+<!--===============================TABLEAU BOUTEILlES ===============================-->
+
+<div class="container-fluid">
+    <div class="fondHautDePage">
+        <div class="row">
+            <div class="col-md-3">
+                {{>logo}}
+            </div>
+            <div class="col-md-9">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container-fluid">
+        <div class="opacity">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text_1">
+                        <h1>Tableau de bouteilles </h1>
+                        <div class="table-responsive">
+                            <table id="tableau_vin">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            NOM
+                                        </th>
+
+                                        <th>
+                                            REGION
+                                        </th>
+
+                                        <th>
+                                            ANNEE
+                                        </th>
+
+                                        <th>
+                                            CLASSEMENT
+                                        </th>
+
+
+                                        <th>
+                                            APPELATION
+                                        </th>
+                                        <th>
+                                            AVIS et PHOTO
+                                        </th>
+                                        <th>
+                                            MODIFIER
+                                        </th>
+                                        <th>
+                                            SUPPRIMER
+                                        </th>
+                                    </tr>
+
+
+                                </thead>
+                                <tbody>
+                                    {{#each bouteilles}}
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                <h5>{{nom}}</h5>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <h5>{{region}}</h5>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <h5>{{annee}}</h5>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <h5>{{classement}}</h5>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <h5>{{appellation}}</h5>
+                                            </strong>
+                                        </td>
+
+                                        <td>
+
+                                            <a class="en_savoir_plus" data-toggle="collapse"
+                                                href="#collapseExample1{{_id}}" role="button" aria-expanded="false"
+                                                aria-controls="collapseExample{{_id}}">
+                                                Cliquez
+                                            </a>
+                                            <div class="collapse" id="collapseExample1{{_id}}">
+                                                <div class="petit_descriptif">
+
+                                                    <img src={{image}} height="auto"
+                                                        style="max-width: 100%;max-height: 150px;">
+                                                    <p>Avis</p>
+                                                    <h5>{{avis}}</h5>
+
+
+                                                    <a class="en_savoir_plus" data-toggle="collapse"
+                                                        href="#collapseExample1{{_id}}" role="button"
+                                                        aria-expanded="false" aria-controls="collapseExample{{_id}}">
+                                                        fermer
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <a href="/bouteille/modif/{{../pageNum}}/{{_id}}"><button
+                                                        class="btn-modif"></button></a>
+
+
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <a href="/bouteille/del/{{_id}}"
+                                                    onclick="return confirm('Voulez vous supprimer cette bouteille ?');"><button
+                                                        class="btn-suppr"></button></a>
+
+
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <nav aria-label="Page_navigation_example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="/bouteilles/add/{{dec pageNum}}">Previous</a></li>
+            <li class="page-item"><a class="page-link">{{pageNum}}</a></li>
+            <li class="page-item"><a class="page-link" href="/bouteilles/add/{{inc pageNum}}">Next</a></li>
+        </ul>
+    </nav>
+</section>
+{{log idChoisi}}
+{{log maBouteille.nom}}
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="image_de_fond">
+                    <div class="overlay"></div>
+
+                    <div class="text_1">
+                        <h1>Ajouter Modifier supprimer</h1>
+                        {{#if idChoisi}}
+                        <form class="formulaire" action="/bouteilles/post/{{pageNum}}/{{idChoisi}}" method="POST"
+                            enctype="multipart/form-data">
+                            {{else }}
+                            <form class="formulaire" action="/bouteilles/post/{{pageNum}}" method="POST"
+                                enctype="multipart/form-data">
+                                {{/if}}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="nom">
+                                            <p>Nom :</p>
+                                        </label>
+                                        <input type="text" name="nom" id="nom" autocomplete="on"
+                                            value="{{maBouteille.nom}}">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="appellation">
+                                            <p>Appellation :</p>
+                                        </label>
+                                        <input type="text" name="appellation" id="appellation" autocomplete="on"
+                                            value="{{maBouteille.appellation}}">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="annee">
+                                            <p>Année :</p>
+                                        </label>
+                                        <input type="text" name="annee" id="annee" autocomplete="on"
+                                            value="{{maBouteille.annee}}">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="classement">
+                                            <p>Classement :</p>
+                                        </label>
+                                        <input type="text" name="classement" id="classement" autocomplete="on"
+                                            value="{{maBouteille.classement}}">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="avis">
+                                            <p>Avis :</p>
+                                        </label>
+                                        <input type="text" name="avis" id="avis" autocomplete="on"
+                                            value="{{maBouteille.avis}}">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="divers">
+                                            <p>Région :</p>
+                                        </label>
+                                        <input type="text" name="region" id="region" autocomplete="on"
+                                            value="{{maBouteille.region}}">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="prixf">
+                                            <p>Prix:</p>
+                                        </label>
+                                        <input type="text" name="prix" id="prix" autocomplete="on"
+                                            value="{{maBouteille.prix}}">
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="photo">
+                                            <p>Photo :</p>
+                                        </label>
+                                        <input class="image-input" type="file" name="image">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="btn_validez">
+                                    <button class="btn">VALIDEZ</button>
+                                </div>
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

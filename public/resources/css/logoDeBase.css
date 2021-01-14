@@ -1,0 +1,113 @@
+/*=========logo de base========*/
+
+.col-md-3 {
+    margin-top: 2vw;
+    margin-bottom: 7vw;
+}
+
+
+.containerLogo {
+    margin-top: 1vw;
+    width: 100%;
+    margin-left: 2vw;
+
+}
+
+
+.logo {
+    background-image: url(../images/imageLogo.jpg);
+    background-size: contain;
+    width: 370px;
+    height: 370px;
+    border-radius: 200px;
+}
+
+
+
+.logo h3 {
+    font-family: "Noto Sans";
+    font-size: 1.2vw;
+    color: #72142e;
+    position: relative;
+    margin-left: 8vw;
+    margin-bottom: 0px;
+    padding-top: 20px;
+
+}
+
+.logo h1 {
+    font-family: "Noto Sans";
+    font-size: 3vw;
+    color: #72142e;
+    position: relative;
+    margin-left: 8vw;
+
+}
+
+.logo h2 {
+    font-family: "Kaushan Script";
+    font-size: 41px;
+    color: #72142e;
+    text-shadow: 0px 0px 15px rgb(17, 16, 16);
+    margin-top: 40px;
+    margin-left: 27px;
+}
+
+/*media-queries*/
+@media screen and (max-width: 1400px) {
+
+
+    .containerLogo {
+        margin-top: 3vw;
+
+    }
+
+
+    .logo {
+        background-image: url(../images/imageLogo.jpg);
+        background-size: contain;
+        width: 270px;
+        height: 270px;
+        border-radius: 200px;
+    }
+
+
+
+
+    .logotext h3 {
+        font-family: "Noto Sans";
+        font-size: 20px;
+        color: #72142e;
+        position: relative;
+        margin-left: 50px;
+        margin-top: 20px;
+        padding-top: 100px;
+
+    }
+
+    .logotext h1 {
+        font-family: "Noto Sans";
+        font-size: 60px;
+        color: #72142e;
+        position: absolute;
+        margin-left: 8px;
+        margin-right: 0px;
+        margin-top: 110px;
+
+    }
+
+    .logotext h2 {
+        font-family: "Kaushan Script";
+        font-size: 35px;
+        color: #72142e;
+        text-shadow: 0px 0px 15px rgb(255, 254, 254);
+        margin-top: 190px;
+        text-align: center;
+        margin-left: 0px;
+
+
+    }
+
+}
+
+/*=========fin logo de base========*/

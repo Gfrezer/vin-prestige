@@ -1,0 +1,122 @@
+<!--===============================TABLEAU GESTION DES UTIISATEURS ===============================-->
+
+<div class="container-fluid">
+    <div class="fondHautDePage">
+        <div class="row">
+            <div class="col-md-3">
+                {{>logo}}
+            </div>
+            <div class="col-md-9">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="opacity">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text_1">
+                    <h1>Tableau des utilisateurs </h1>
+                    <div class="table-responsive">
+                        <table id="tableau_vin">
+                            <thead>
+                                <tr>
+                                    <th>UTILISATEURS</th>
+                                    <th>NOM</th>
+                                    <th>PSEUDO</th>
+                                    <th>ADRESSE</th>
+                                    <th>EMAIL</th>
+                                    <th>ID</th>
+                                    <th>BANNIR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each allUsers}}
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>
+                                        <strong>
+                                            <h5>{{name}}</h5>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <h5>{{pseudo}}</h5>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <h5>{{adresse}}</h5>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <h5>{{email}}</h5>
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        <strong>
+                                            <h5>{{id}}</h5>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Launch demo modal
+                                        </button>
+                                    </td>
+                                </tr>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression
+                                                    ?</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Utilisateur: {{name}}<br>
+                                                Email: {{email}}<br>
+                                                Id: {{_id}}
+
+                                            </div>
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <a href="/user/adminModifUser/{{this._id}}/?_method=DELETE">
+                                                    <button type="button" class="btn btn-primary">Confirmez la
+                                                        suppression</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page_navigation_example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link"
+                                        href="/bouteilles/add/{{dec pageNum}}">Previous</a></li>
+                                <li class="page-item"><a class="page-link">{{pageNum}}</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="/bouteilles/add/{{inc pageNum}}">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

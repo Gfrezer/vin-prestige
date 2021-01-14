@@ -1,0 +1,40 @@
+/*================================footer======================================*/
+/*footer*/
+
+.fond_footer1 {
+    background-color: brown;
+    width: auto;
+    height: auto;
+
+}
+
+.footer1_text {
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact h5 {
+    font-size: 15px;
+    color: brown;
+    margin-top: 8px;
+
+}
+
+.footer1_text p {
+    color: rgb(245, 189, 189);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+
+.container-fluid-footer {
+    width: 100%;
+}

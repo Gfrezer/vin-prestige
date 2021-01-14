@@ -1,0 +1,202 @@
+/*=======================compte message ==========================*/
+
+
+
+.compteUtilisateur {
+    background-image: url("/resources/images/service.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.compteUtilisateur h1 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group label {
+
+    font-family: sans-serif;
+    color: rgb(206, 200, 200);
+    text-align: left;
+
+
+}
+
+.card {
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../images/feuille1.png);
+    background-color: rgba(14, 13, 13, 0.685);
+    background-repeat: no-repeat;
+    opacity: 1 !important;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+.btn_message_post {
+    width: 70px;
+    margin-left: 38%;
+    color: white;
+    background-color: #9a5757;
+    border-radius: 15px;
+
+
+}
+
+.btn_message_post:hover {
+    background-color: white;
+    color: gray;
+
+}
+
+.card-body a img {
+    color: white;
+    size: 200px;
+}
+
+
+
+
+
+
+
+
+/*medias queries 1024px */
+@media screen and (max-width: 1024px) {
+    .compteUtilisateur {
+        background-image: url("/resources/images/service.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    .compteUtilisateur h1 {
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .form-group label {
+
+        font-family: sans-serif;
+        color: rgb(206, 200, 200);
+        text-align: left;
+    }
+
+
+    .card {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-image: url(../images/feuille1.png);
+        background-color: rgba(14, 13, 13, 0.685);
+        background-repeat: no-repeat;
+        opacity: 1 !important;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*medias queries 420px */
+
+@media screen and (max-width: 420px) {
+    .compteUtilisateur {
+        position: relative;
+        background-image: url("/resources/images/service.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .compteUtilisateur h1 {
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .form-group label {
+        font-family: sans-serif;
+        color: rgb(206, 200, 200);
+        text-align: left;
+    }
+
+
+
+    .card {
+        width: 280px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-image: url(../images/feuille1.png);
+        background-color: rgba(14, 13, 13, 0.685);
+        background-repeat: no-repeat;
+        opacity: 1 !important;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+    .btn_message_post {
+        width: 70px;
+        margin-left: 38%;
+        color: white;
+        background-color: #9a5757;
+        border-radius: 15px;
+    }
+
+
+    .btn_message_post:hover {
+        background-color: white;
+        color: gray;
+    }
+
+
+
+    .card-body a img {
+        color: white;
+        size: 200px;
+    }
+
+
+
+}

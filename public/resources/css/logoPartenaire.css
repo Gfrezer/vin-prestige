@@ -1,0 +1,64 @@
+/*==================== logo partenaire ==========================*/
+
+
+
+
+.logoPartenaire {
+    text-align: center;
+}
+
+.textLogoPartenaires {
+    font-size: 30px;
+    font-family: "Noto Sans HK display";
+    color: rgba(156, 96, 96, 0.7);
+    font-family: cursive;
+    margin-top: 4vw;
+    margin-left: 50px;
+
+
+}
+
+.logoPartenaire img {
+    width: auto;
+    height: 200px;
+    margin-left: 0.2vw;
+    vertical-align: initial;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    .logoPartenaire {
+        text-align: center;
+    }
+
+    .textLogoPartenaires {
+        font-size: 30px;
+        font-family: "Noto Sans HK display";
+        color: rgba(156, 96, 96, 0.7);
+        font-family: cursive;
+        margin-top: 4vw;
+        text-align: center;
+        margin-left: 0px;
+
+    }
+
+    .logoPartenaire img {
+        width: 280px;
+        height: 200px;
+        margin-left: 0.2vw;
+        vertical-align: initial;
+        border-style: none;
+    }
+
+
+}

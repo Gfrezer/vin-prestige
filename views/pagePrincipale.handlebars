@@ -1,0 +1,228 @@
+<!--================================Page Principale===========================-->
+<div class="container-fluid">
+    <div class="fondHautDePage">
+        <div class="row">
+            <div class="col-md-3">
+                {{>logo}}
+            </div>
+            <div class="col-md-9">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+</div>
+{{>logoPartenaires}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="titreSection">
+                <h2 id="produits">Nos Produits en ce moment</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 px-0">
+            <div class="photo_vigne">
+                <div class="container-de-fond">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="wrapper">
+                                {{#each bouteilles}}
+                                <section class="sectionlogo">
+
+                                    <div class="col-md-4 p-0">
+                                        <div class="card-fiche">
+                                            <input type="checkbox" id="{{_id}}" class="more" aria-hidden="true">
+                                            <div class="content">
+
+
+                                                <div class="front">
+                                                    <div class="inner">
+                                                        <h2>{{nom}}</h2>
+                                                        <label for="{{_id}}" class="button" aria-hidden="true">
+                                                            Details
+                                                        </label>
+                                                        <img class="photo image" src="{{image}}" height="300px">
+
+
+                                                    </div>
+                                                </div>
+
+                                                <section class="back">
+
+
+                                                    <div class="region">
+                                                        <p>REGION :</p>
+                                                        <h4>{{region}}</h4>
+                                                    </div>
+
+                                                    <div class="annee">
+                                                        <p>Année :</p>
+                                                        <h4>{{annee}}</h4>
+                                                    </div>
+
+                                                    <div class="appellation">
+                                                        <p>Appellation</p>
+                                                        <h4>{{appellation}}</h4>
+                                                    </div>
+
+
+                                                    <div class="avis">
+                                                        <p>Avis</p>
+                                                        <h4>{{avis}}</h4>
+                                                    </div>
+
+                                                    <div class="classement">
+                                                        <p>Classement</p>
+                                                        <h4>{{classement}}</h4>
+                                                    </div>
+
+
+                                                    <div class="prix">
+                                                        <p>Prix :</p>
+                                                        <h4>{{prix}}€</h4>
+                                                    </div>
+
+                                                    <div class="coeur">
+                                                        <a href="/reservation/{{_id}}">
+                                                            {{#if reserve}}
+                                                            <i class="fas fa-heart fa-2x"></i>
+                                                            {{else}}
+                                                            <i class="far fa-heart fa-2x"></i>
+                                                            {{/if}}
+                                                        </a>
+                                                    </div>
+
+                                                    <label for="{{_id}}" class="button return" aria-hidden="true">
+                                                        <i class="fas fa-arrow-left"></i>
+                                                    </label>
+
+
+                                                </section>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                {{/each}}
+                            </div>
+                            <nav aria-label="Page_navigation_example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link"
+                                            href="/pagePrincipale/{{dec pageNum}}">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link">{{pageNum}}</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="/pagePrincipale/{{inc pageNum}}">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titreSection">
+                    <h2 id="choix">Le choix parmi: 800 châteaux et domaines et 5000 vins, champagnes et spiritueux.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section>
+        <div class="gallerygrid">
+            <a href="" class="image_1" title="image1"><img src="/resources/images/image1.jpeg"></a>
+
+            <a href="" class="image_2" title="image2"><img src="/resources/images/image2.jpeg"></a>
+
+            <a href="" class="image_3" title="image3"><img src="/resources/images/image3.jpeg"></a>
+
+            <a href="" class="image_4" title="image4"><img src="/resources/images/image4.jpeg"></a>
+
+            <a href="" class="image_5" title="image5"><img src="/resources/images/image5.jpeg"></a>
+
+            <a href="" class="image_6" title="image6"><img src="/resources/images/image6.jpeg"></a>
+
+            <a href="" class="image_7" title="image7"><img src="/resources/images/image7.jpeg"></a>
+
+            <a href="" class="image_8" title="image8"><img src="/resources/images/image8.jpeg"></a>
+
+            <a href="" class="image_9" title="image9"><img src="/resources/images/image9.jpeg"></a>
+
+            <a href="" class="image_10" title="image10"><img src="/resources/images/image10.jpeg"></a>
+        </div>
+
+
+    </section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titreSection">
+                    <h2 id="article">Cycle de la vigne</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cycleVigne">
+        <img src="/resources/images/CycleNavbar.jpg" width="100%">
+    </div>
+    <!--=======================================message des utilisateurs===============================-->
+
+    <!-- GET -->
+    <!--AVIS CLIENTS-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titreSection">
+                        <h2 id="adores">Ils ont adoré</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="client-profil">
+                <div class="row">
+                    {{#each messages}}
+                    <div class="col-md-4">
+                        <div class="bloc_mess">
+                            <blockquote>
+                                <img src="{{photo}}">
+                                <p>{{content}}</p><br />
+                                <cite>{{author}}</cite>
+                                <p>{{moment createDate "DD/MM/YYYY"}}</p>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    {{>footer}}
+    <!--====================================fin image de fond===================-->

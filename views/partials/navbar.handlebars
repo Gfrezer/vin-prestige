@@ -1,0 +1,65 @@
+{{!-- !--====================NAVBAR===================================--> --}}
+<section>
+    <div class="navbar_css">
+        <div class="navbar navbar-expand-md bg-light navbar-light ">
+            <div class="container-fluid-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controles="monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav" ml="auto">
+
+                        {{#if user.isAdmin}}
+
+                        <a class="nav-item nav-link" href="/bouteilles/add">Gestion des Bouteilles</a>
+                        <a class="nav-item nav-link" href="/adminModifUser">Gestion des Utilisateurs</a>
+                        <a class="nav-item nav-link" href="/user/logout">Déconnexion</a>
+                        <p>Vous êtes sur </br>votre compte administrateur</p>
+                        {{else}}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Carte</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item1" href="#">Bordelais<span><img
+                                            src="/resources/images/bordeaux-carte.gif" alt=""></span></a>
+                                <a class="dropdown-item1" href="#">Bourgogne<span><img
+                                            src="/resources/images/bourgogne.jpg" alt=""></span></a><br />
+                                <a class="dropdown-item1" href="#">Vallée du Rhone<span><img
+                                            src="/resources/images/valee_du_rhone.jpg" alt=""></span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item1" href="#">France<span><img src="/resources/images/france.jpg"
+                                            alt=""></span></a>
+                            </div>
+                        </li>
+                        <a class="nav-item nav-link" href="/user/userCompte">Mon Compte</a>
+                        <a class="nav-item nav-link" href="/user/userMessage">Mes Messages</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Mes Réservations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item1" href="/user/mesResas">essaie resas<span>
+
+                            </div>
+                        </li>
+                        <!--<a class="nav-item nav-link" href="#footer">contact</a>-->
+                        <a class="nav-item nav-link" href="/user/logout">Déconnexion</a>
+                        {{/if}}
+
+                    </div>
+                </div>
+                <div class="ancrePagePrincipale">
+                    <p>
+                        <a href="#produits">Nos Produits</a>
+                        <a href="#choix">Nos Choix</a>
+                        <a href="#article">Articles sur la vigne</a>
+                        <a href="#adores">Ils ont Adorés</a>
+                        <a href="#footer">Contact</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>

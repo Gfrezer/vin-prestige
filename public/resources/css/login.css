@@ -1,0 +1,496 @@
+/*=========================LOGIN=======================================*/
+
+
+
+.login h1 {
+    margin-top: 1vw;
+    font-family: sans-serif;
+    color: rgb(206, 200, 200);
+    text-align: left;
+    font-size: 30px;
+    margin-left: 2vw;
+
+}
+
+.login h3 {
+    color: rgb(206, 200, 200);
+    height: 7vw;
+    font-size: 50px;
+    padding-top: 1.5vw;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 4vw;
+
+}
+
+/*text mot de passe oublié*/
+.login h4 {
+    margin-top: 1vw;
+    font-family: sans-serif;
+    color: rgb(206, 200, 200);
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.errorMail p {
+
+    background-color: rgb(209, 29, 29);
+}
+
+/* fin text mot de passe oublié*/
+
+.error,
+.newmdp {
+    padding-left: 20px;
+    font-size: 17px;
+    text-align: left;
+    color: white;
+    background-color: rgb(209, 29, 29);
+}
+
+.error-list {
+    position: absolute;
+    margin-top: -6vw;
+    width: 500px;
+
+}
+
+/*error list pour message et compte*/
+.error-list-message-compte {
+    position: relative;
+    margin-top: 0px;
+    width: auto;
+
+}
+
+.login p {
+    color: rgb(206, 200, 200);
+    margin-top: 20px;
+}
+
+
+.login {
+    text-align: center;
+    position: relative;
+}
+
+.login input {
+    padding-left: 10px;
+    width: 450px;
+    height: 40px;
+    border-radius: 20px 5px;
+    margin-bottom: 10px;
+}
+
+.boutton {
+
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.boutton .btn_validez {
+    width: auto;
+    padding: 8px;
+    color: white;
+    background-color: #ad7575;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.boutton .btn_validez:hover {
+    background-color: white;
+    color: gray;
+}
+
+
+
+.text_mot_de_passe p {
+    margin-top: 1vw;
+    color: rgb(206, 200, 200);
+    margin-bottom: 1vw;
+    font-size: 18px;
+}
+
+.boutton .btn {
+    margin-top: 2vw;
+    width: 10vw;
+    padding: 5 px;
+    color: rgb(206, 200, 200);
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.boutton .btn:hover {
+    background-color: white;
+    color: gray;
+}
+
+.image_de_fond_admin {
+    position: absolute;
+    background-image: url(/resources/images/fondLogin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.container_login {
+    background-image: url(../images/feuille11.png);
+    background-color: rgba(14, 13, 13, 0.685);
+    background-repeat: repeat;
+    width: 500px;
+    height: 800px;
+    margin-top: 5vw;
+    opacity: 1 !important;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*checkbox plus de 18 ans*/
+.checkboxplus18 p {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: #9a5757;
+}
+
+#scalesplus18 {
+    color: #25191d;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries 1104px*/
+@media screen and (max-width: 1104px) {
+
+    .login h1 {
+        margin-top: 1vw;
+        font-family: sans-serif;
+        color: rgb(206, 200, 200);
+        text-align: left;
+        font-size: 30px;
+        margin-left: 2vw;
+
+    }
+
+    .login h3 {
+        color: rgb(206, 200, 200);
+        height: 7vw;
+        font-size: 50px;
+        padding-top: 1.5vw;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 20vw;
+
+    }
+
+    /*text mot de passe oublié*/
+    .login h4 {
+        margin-top: 1vw;
+        font-family: sans-serif;
+        color: rgb(206, 200, 200);
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+    .errorMail p {
+
+        background-color: rgb(209, 29, 29);
+    }
+
+    /* fin text mot de passe oublié*/
+
+    .error,
+    .newmdp {
+        padding-left: 20px;
+        font-size: 17px;
+        text-align: left;
+        color: white;
+        background-color: rgb(209, 29, 29);
+    }
+
+    .error-list {
+        position: absolute;
+        margin-top: -18vw;
+        width: 500px;
+
+    }
+
+    .login p {
+        color: rgb(206, 200, 200);
+        margin-top: 20px;
+    }
+
+
+    .login {
+        text-align: center;
+        position: relative;
+    }
+
+    .login input {
+        padding-left: 10px;
+        width: 450px;
+        height: 40px;
+        border-radius: 20px 5px;
+        margin-bottom: 10px;
+    }
+
+    .boutton {
+
+        margin-top: 1vw;
+        text-align: center;
+    }
+
+    .boutton .btn_validez {
+        width: auto;
+        padding: 8px;
+        color: white;
+        background-color: #ad7575;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+
+    .boutton .btn_validez:hover {
+        background-color: white;
+        color: gray;
+    }
+
+
+
+    .text_mot_de_passe p {
+        margin-top: 1vw;
+        color: rgb(206, 200, 200);
+        margin-bottom: 1vw;
+        font-size: 18px;
+    }
+
+    .boutton .btn {
+        margin-top: 2vw;
+        width: 10vw;
+        padding: 5 px;
+        color: rgb(206, 200, 200);
+        background-color: gray;
+        border-radius: 15px;
+    }
+
+    .boutton .btn:hover {
+        background-color: white;
+        color: gray;
+    }
+
+    .image_de_fond_admin {
+        position: absolute;
+        background-image: url(/resources/images/fondLogin.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .container_login {
+        background-image: url(../images/feuille11.png);
+        background-color: rgba(14, 13, 13, 0.685);
+        background-repeat: repeat;
+        width: 500px;
+        height: 800px;
+        margin-top: 5vw;
+        opacity: 1 !important;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*checkbox plus de 18 ans*/
+    .checkboxplus18,
+    p {
+        font: 1rem 'Fira Sans', sans-serif;
+        color: #9a5757;
+    }
+
+    #scalesplus18 {
+        color: #25191d;
+        height: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*media queries Iphone5/SE*/
+    @media screen and (max-width: 525px) {
+
+        .login h1 {
+            margin-top: 2vw;
+            font-family: sans-serif;
+            color: rgb(206, 200, 200);
+            text-align: left;
+            font-size: 15px;
+            margin-left: 9vw;
+
+        }
+
+        .login h3 {
+            color: rgb(206, 200, 200);
+            height: 12vw;
+            font-size: 30px;
+            padding-top: 2.5vw;
+            text-align: center;
+            margin-bottom: 72px;
+            font-family: sans-serif;
+        }
+
+        /*text mot de passe oublié*/
+        .login h4 {
+            margin-top: 1vw;
+            font-family: sans-serif;
+            color: rgb(206, 200, 200);
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
+
+        .errorMail p {
+
+            background-color: rgb(209, 29, 29);
+        }
+
+        /* fin text mot de passe oublié*/
+
+        .error {
+            padding-left: 20px;
+            font-size: 10px;
+            text-align: left;
+            color: white;
+            background-color: rgb(209, 29, 29);
+        }
+
+        .error-list {
+            position: absolute;
+            margin-top: -66px;
+            width: 300px;
+
+        }
+
+        .login p {
+            color: rgb(206, 200, 200);
+            margin-top: 20px;
+        }
+
+        .login {
+            text-align: center;
+            position: relative;
+        }
+
+        .login input {
+            width: 250px;
+            height: 30px;
+            border-radius: 20px 5px;
+            margin-bottom: 20px;
+        }
+
+        .boutton {
+            margin-top: 1vw;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .boutton .btn_validez {
+            width: auto;
+            padding: 8px;
+            color: white;
+            background-color: #ad7575;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .boutton .btn_validez:hover {
+            background-color: white;
+            color: gray;
+        }
+
+
+
+        .text_mot_de_passe p {
+            margin-top: 1vw;
+            color: rgb(206, 200, 200);
+            margin-bottom: 3vw;
+            font-size: 18px;
+        }
+
+        .boutton .btn {
+            margin-top: 2vw;
+            width: 10vw;
+            padding: 5 px;
+            color: rgb(206, 200, 200);
+            background-color: gray;
+            border-radius: 15px;
+        }
+
+        .boutton .btn:hover {
+            background-color: white;
+            color: gray;
+        }
+
+        .image_de_fond_admin {
+            position: absolute;
+            background-image: url(/resources/images/fondLogin.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .container_login {
+            background-image: url(../images/feuille11.png);
+            background-color: rgba(14, 13, 13, 0.685);
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 600px;
+            margin-top: 5vw;
+            opacity: 1 !important;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*checkbox plus de 18 ans*/
+        .checkboxplus18,
+        p {
+            font: 1rem 'Fira Sans', sans-serif;
+            color: #9a5757;
+        }
+
+        #scalesplus18 {
+            color: #25191d;
+            height: 30px;
+        }
+
+        .error {
+            color: white;
+        }
+
+
+    }
+}

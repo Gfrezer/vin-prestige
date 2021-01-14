@@ -1,0 +1,113 @@
+<div class="container-fluide">
+    <div class="fondHautDePage">
+        <div class="row">
+            <div class="col-md-3">
+                {{>logo}}
+            </div>
+            <div class="col-md-9">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluide">
+    <div class="messageUtilisateur">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Mon compte Utilisateur</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="error-list">
+                            {{#each errors}}
+                            <li class="error">{{this}}</li>
+                            {{/each}}
+                        </div>
+                        <form action="/user/userModifCompte" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                è <label> nouveau Nom</label>
+                                <input type="text" class="form-control" name="name" value="{{user.name}}">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nouvel Email</label>
+                                <input type="email" class="form-control" name="email" value="{{user.email}}">
+                            </div>
+
+                            <div class="form-group ">
+
+                                <p>changer le mdp saisir les champs ci dessous</p>
+
+                                <label>ancien mdp</label>
+                                <input type="text" class="form-control" name="ancienPassword" value="">
+
+                                <label>Nouveau mot de passe</label>
+                                <input type="text" class="form-control" name="password" value="">
+
+                                <label>Pseudo</label>
+                                <input type="text" class="form-control" name="pseudo" value={{user.pseudo}}>
+
+                                <label>Votre Adresse</label>
+                                <input type="text" class="form-control" name="adresse" value={{user.adresse}}>
+                            </div>
+                            {{!-- <div class="form-group ">
+                        <label>Confirmer votre mot de passe</label>
+                        <input type="text" class="form-control" name="password" value="{{user.password}}">
+                    </div> --}}
+
+
+                            <button type="submit" class="btn_message_post">Validez</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="compte-container-fluide">
+    <p>vous etes sur votre compte</p>
+    <!-- PUT -->
+    <div class="row">
+        <div class="col-md-6">
+            <h1>PUT</h1>
+            <div class="card">
+                <form action="/user/userModifCompte" method="POST">
+                    <div class="form-group">
+                        <label> nouveau Nom</label>
+                        <input type="text" class="form-control" name="name" value="{{user.name}}">
+                    </div>
+                    <div class="form-group">
+                        <label>nouveau Email</label>
+                        <input type="email" class="form-control" name="email" value="{{user.email}}">
+                    </div>
+                    <div class="form-group ">
+                        <p>changer le mdp saisir les champs ci dessous</p>
+                        <label>ancien mdp</label>
+                        <input type="text" class="form-control" name="ancienPassword" value="">
+                        <label>Nouveau mot de passe</label>
+                        <input type="text" class="form-control" name="password" value="">
+                    </div>
+                    {{!-- <div class="form-group ">
+                        <label>Confirmer votre mot de passe</label>
+                        <input type="text" class="form-control" name="password" value="{{user.password}}">
+                    </div> --}}
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,322 @@
+/*======================debut FORMULAIRE de l'ARTICLE =======================*/
+.image_de_fond {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    background-image: url(/resources/images/fond_de_base.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+label {
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+label p {
+    color: #9a5757;
+    text-align: left;
+    font-size: 25px;
+}
+
+.formulaire {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+}
+
+
+.text_1 h1 {
+    font-size: 40px;
+    background: linear-gradient(60deg, #9a5757, white);
+    color: white;
+    padding-left: 20px;
+    margin-left: 20%;
+
+}
+
+.formulaire input {
+    width: 450px;
+    height: 40px;
+    border-radius: 20px 5px;
+
+}
+
+
+#avis {
+    height: 140px;
+    margin-bottom: 20px;
+
+}
+
+button {
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.btn {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #9a5757;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: gray;
+
+}
+
+.acceder h6 {
+    font-size: 10px;
+
+}
+
+.acceder label {
+    position: absolute;
+
+
+}
+
+.acceder input {
+    position: absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1240px) {
+    .image_de_fond {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.5;
+        background-image: url(/resources/images/fond_de_base.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+
+    label {
+        display: block;
+        float: left;
+        width: 200px;
+    }
+
+    label p {
+        color: #9a5757;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .formulaire {
+        margin-left: 5%;
+        margin-left: 5%;
+        margin-top: 80px;
+    }
+
+
+    .text_1 h1 {
+        font-size: 40px;
+        background: linear-gradient(60deg, #9a5757, white);
+        color: white;
+
+
+    }
+
+    .formulaire input {
+        width: 350px;
+        height: 40px;
+        border-radius: 20px 5px;
+
+
+    }
+
+
+    #avis {
+        height: 140px;
+        margin-bottom: 20px;
+
+    }
+
+    button {
+        border-radius: 10px;
+        text-align: center;
+
+    }
+
+    .btn {
+        width: 100px;
+        padding: 10px;
+        color: white;
+        background-color: #9a5757;
+        border-radius: 15px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: gray;
+
+    }
+
+    .acceder h6 {
+        font-size: 10px;
+
+    }
+
+    .acceder label {
+        position: absolute;
+
+
+    }
+
+    .acceder input {
+        position: absolute;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+    .image_de_fond {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.5;
+        background-image: url(/resources/images/fond_de_base.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+
+    label {
+        display: block;
+        float: left;
+        width: 200px;
+    }
+
+    label p {
+        color: #9a5757;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .formulaire {
+        margin-left: 5%;
+        margin-left: 5%;
+        margin-top: 80px;
+    }
+
+
+    .text_1 h1 {
+        font-size: 40px;
+        background: linear-gradient(60deg, #9a5757, white);
+        color: white;
+
+
+    }
+
+    .formulaire input {
+        width: 250px;
+        height: 40px;
+        border-radius: 20px 5px;
+
+
+    }
+
+
+    #avis {
+        height: 140px;
+        margin-bottom: 20px;
+
+    }
+
+    button {
+        border-radius: 10px;
+        text-align: center;
+
+    }
+
+    .btn {
+        width: 100px;
+        padding: 10px;
+        color: white;
+        background-color: #9a5757;
+        border-radius: 15px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: gray;
+
+    }
+
+    .acceder h6 {
+        font-size: 10px;
+
+    }
+
+    .acceder label {
+        position: absolute;
+
+
+    }
+
+    .acceder input {
+        position: absolute;
+
+    }
+}

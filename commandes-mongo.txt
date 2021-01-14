@@ -1,0 +1,1 @@
+db.users.updateOne({name:"gael"},{$set : {isAdmin:true}})

@@ -1,0 +1,35 @@
+<section>
+    <div class="image_de_fond_admin">
+        <form action="/user/mdpOublie" class="mdpoublie" method="POST" enctype="multipart/form-data">
+            <div class="container_login">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="login">
+                            <h3>MOT DE PASSE OUBLIE</h3>
+
+                            <div class="errorMail">
+                                {{#if error}}
+                                <p>{{error}}</p>
+                                {{/if}}
+                            </div>
+
+                            <h1>Email :</h1>
+                            <input type="email" id="email" name="email" placeholder="   Email ">
+                            <div class="boutton">
+                                <button type="submit" class="btn_validez">VALIDEZ</button>
+                            </div>
+                            <a href="/user/login">
+                                <p>Annuler</p>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+</section>

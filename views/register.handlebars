@@ -1,0 +1,53 @@
+<section>
+    <div class="image_de_fond_admin">
+        <form action="/user/register" class="formlogin" method="POST" enctype="multipart/form-data">
+            <div class="container_login">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="login">
+                            <h3>INSCRIPTION</h3>
+                            <div class="error-list">
+                                {{#each errors}}
+                                <li class="error">{{this}}</li>
+                                {{/each}}
+                            </div>
+
+                            <h1>Nom :</h1>
+                            <input type="text" id="login" name="name" placeholder="   Votre nom" />
+
+
+                            <h1>Email :</h1>
+                            <input type="email" id="email" name="email" placeholder="   Email input" />
+
+
+                            <h1>Password :</h1>
+                            <input type="password" id="password" name="password" placeholder="   Password" />
+
+
+                            <div class="checkboxplus18">
+                                <p>Avez-vous plus de 18 ans ?</p>
+                                <input type="checkbox" id="scalesplus18" name="scalesplus18" value="true">
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="boutton">
+                                        <button type="submit" class="btn_validez">VALIDEZ</button>
+                                    </div>
+                                    <div class="text_mot_de_passe">
+                                        <a href="/user/login">
+                                            <p>Se connecter</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!--====================================fin image de fond===================-->

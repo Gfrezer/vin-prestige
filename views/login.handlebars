@@ -1,0 +1,43 @@
+<section>
+    <div class="image_de_fond_admin">
+        <form action="/user/loginAuth" class="formlogin" method="POST" enctype="multipart/form-data">
+            <div class="container_login">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="login">
+                            <h3>S'IDENTIFIER</h3>
+                            <div class="errorMail">
+                                {{#if message}}
+                                <p> {{message}}</p>
+                                {{/if }}
+                            </div>
+                            <h1>Email :</h1>
+                            <input type="email" id="email" name="email" placeholder="   Email input">
+
+
+                            <h1>Password :</h1>
+                            <input type="password" id="password" name="password" placeholder="   Password">
+
+
+                            <div class="boutton">
+                                <button class="btn_validez">Se connecter</button>
+                            </div>
+
+                            <div class="text_mot_de_passe">
+                                <a href="/user/create">
+                                    <p>S'inscrire</p>
+                                </a>
+                                <a href="/user/mdpOublie">
+                                    <p>Mot de passe oublié ?</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </form>
+    </div>
+
+</section>
+<!--====================================fin image de fond===================-->
